@@ -29,6 +29,9 @@ export class AppComponent {
 
   // check user's theme preferences
   checkDarkThemePrefs() {
+    /*
+    lo ideal seria que esto se colocara en un servicio tho...
+    */
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
     console.log(prefersDark.matches);
     if (prefersDark.matches) {
